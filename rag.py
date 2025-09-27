@@ -1,5 +1,6 @@
 from groq import Groq
 import os
+import streamlit as st
 import re
 from dotenv import load_dotenv
 
@@ -71,4 +72,5 @@ class SimpleRAG:
             reply += f"- {sent.strip()}\n"
         reply += "\nLet me know if you want a deeper explanation."
         return reply
+
 
